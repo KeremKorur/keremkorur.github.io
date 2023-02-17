@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+<title> İlk html sayfam </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
+<link rel="stylesheet" href="">
+
+<link rel="stylesheet" href="style.css">
+<body style="background-color: rgb(91, 91, 91);"></body>
+    </head>
+
+
+    <body>  
+<h1 class="grup1" >BAŞVURU FORMU</h1>
+ <form method="get" id="form1"> 
+  <fieldset>
+    <label>Email<input id="email" name="email" required type="email" > <br> </label> 
+   <label> Şifre <input id="şifre" name="şifre"  required type="password"> <br> </label>
+   <label> TC NO <input id="TC" name="TC" placeholder="11 Haneli Kimlik Numarası" maxlength="11" required type="text" ><br> </label> 
+</fieldset>
+<fieldset>
+   <label> Cep telefonu <input id="cep" name="Cep"  placeholder=" Başında 0 olmadan giriniz" required type="tel"> <br> </label> 
+   <label> Doğum Tarihi <input id="doğum" name="Doğum" required type="date"> <br> </label>
+   <input name="Meslek" placeholder="Mesleğiniz" list="Mesleğiniz">
+   <datalist id="Mesleğiniz">
+   <option value="Öğrenci">
+   <option value="Yazılımcı">
+     <option value="Mühendis">
+     </datalist> <br> 
+   <label>  <input id="kadın"  required type="radio" name="cinsiyet" value="Kadın"> Kadın </label>    
+   <label><input id="erkek" required type="radio" name="cinsiyet" value="Erkek"> Erkek   </label> </fieldset> <br>
+</form>
+  
+<select name="Diller[]">
+    <optgroup label="YAZILIM DİLİNİ SEÇİNİZ"></optgroup>
+<option value="Diller">CSS</option>
+<option value="Diller">HTML</option>
+<option value="Diller">JAVA</option>
+
+</select>
+<br><br>
+<div class="grup1" >Özgeçmiş</div>
+<textarea name="Özgeçmiş" id="Özgeçmiş" cols="100" rows="10"> </textarea>
+ <form>
+<label><input required type="checkbox">Kuralları kabul ediyorum.</label> <br>
+<label><input type="submit" value="Kayıt Ol"> </label>
+</form>
+<div class="grup1" >BİZİ TERCİH ETTİĞİNİZ İÇİN TEŞEKKÜR EDERİZ.</div>
+      </body>
+</html>
